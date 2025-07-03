@@ -15,6 +15,7 @@ public class CostumeScanner {
         } catch (InputMismatchException e) {
             // if user enters a non-integer, show error and ask again
             System.out.println("Hatalı giriş! Lütfen tam sayı giriniz.");
+            scanner.nextLine(); // clear the invalid input
             return getIntValueOnConsole(valueName, text); // recursive call
         }
     }
@@ -27,6 +28,7 @@ public class CostumeScanner {
         } catch (InputMismatchException e) {
             // if user enters a non-integer, show error and ask again
             System.out.println("Hatalı giriş! Lütfen tam sayı giriniz.");
+            scanner.nextLine(); // clear the invalid input
             return getIntValueOnConsole(valueName, text); // recursive call
         }
     }
@@ -39,6 +41,7 @@ public class CostumeScanner {
         } catch (InputMismatchException e) {
             // if user enters a non-integer, show error and ask again
             System.out.println("Hatalı giriş! Lütfen tam sayı giriniz.");
+            scanner.nextLine(); // clear the invalid input
             return getIntValueOnConsole(text); // recursive call
         }
     }
@@ -51,6 +54,7 @@ public class CostumeScanner {
         } catch (InputMismatchException e) {
             // if user enters a non-double, show error and ask again
             System.out.println("Hatalı giriş! Lütfen ondalıklı sayı giriniz.");
+            scanner.nextLine(); // clear the invalid input
             return getDoubleValueOnConsole(valueName, text); // recursive call
         }
     }
@@ -63,6 +67,7 @@ public class CostumeScanner {
         } catch (InputMismatchException e) {
             // if user enters a non-double, show error and ask again
             System.out.println("Hatalı giriş! Lütfen ondalıklı sayı giriniz.");
+            scanner.nextLine(); // clear the invalid input
             return getDoubleValueOnConsole(valueName, text); // recursive call
         }
     }
@@ -75,6 +80,7 @@ public class CostumeScanner {
         } catch (InputMismatchException e) {
             // if user enters a non-integer, show error and ask again
             System.out.println("Hatalı giriş! Lütfen tam sayı veya ondalıklı sayı giriniz.");
+            scanner.nextLine(); // clear the invalid input
             return getFloatValueOnConsole(text); // recursive call
         }
     }
